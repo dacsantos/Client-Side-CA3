@@ -1,4 +1,103 @@
-.nav-wrapper{
-    display: flex;
-    justify-content: space-between;
+body {
+  margin: 2px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Nav Styles */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 10px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  height: 20px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link a {
+  color: teal;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid darkolivegreen;
+}
+
+.nav-link a:hover {
+  color: darkolivegreen;
+}
+
+/* Center body styles */
+
+.page-options {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.page-option {
+  position: relative;
+}
+
+.restaurant-name {
+  font-size: 50px;
+  font-weight: 500;
+  color: teal;
+  align-items: center;
+  text-align: center;
+}
+
+.option-title {
+  font-weight: 600;
+  color: teal;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+table {
+  font-size: 15px;
+  width: 700px;
+}
+
+table th {
+  background-color: cadetblue;
+}
+td.total {
+  background-color: lightgrey;
+}
+.right {
+  text-align: right;
 }

@@ -22,18 +22,61 @@
 
         <div class="center-page">
           <div class="restaurant-name">Restaurant Brazil</div>
+          <div class="page-options">
+            <div class="page-option">
+              <div class="option-title">Validate staff password</div>
+              <form>
+                <label for="credit">Password</label>
+                <input type="text" id="credit" name="credit" pattern="[0-9]{8}" title="Must contain 8 digits" required>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
 
-          <div class="password-validate">Validate staff password </div>
+            <div class="page-option">
+              <div class="option-title">Order Menu</div>
+              <table>
+                <tr style="background-color: rgb(209, 229, 255);">
+                    <td></td>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Item A</td>
+                    <td><input type="number" id="qtt1" name="qtt" value="0" min="0" max="99" size="1" data-price="100"></td>
+                    <td>€100</td>
+                </tr>
+                <tr>
+                    <td>Item B</td>
+                    <td><input type="number" id="qtt2" name="qtt" value="0"min="0" max="99"size="2" data-price="50"></td>
+                    <td>€50</td>
+                </tr>
+                <tr>
+                    <td>Item C</td>
+                    <td><input type="number" id="qtt3" name="qtt" value="0"min="0" max="99"size="2" data-price="30"></td>
+                    <td>€30</td>
+                </tr>
+                <tr>
+                    <td>Item D</td>
+                    <td><input type="number" id="qtt4" name="qtt" value="0"min="0" max="99"size="2" data-price="24"></td>
+                    <td>€24</td>
+                </tr>
+                <tr style="background-color: rgb(209, 229, 255);">
+                    <td class="total">&nbsp;</td>
+                        <td class="total right"><strong>Total:</strong></td>
+                        <td class="total"><strong>
+                                <div id="Total">€0</div>
+                </tr>
+            </table>
+            </div>
 
-          <div class="order-menu">Order Menu</div>
-
-          <div class="order-breakdown">Order Breakdown</div>
+            <div class="page-option">
+              <div class="option-title">Order Breakdown</div>
+            </div>
+          </div>
         </div>
 
         <div class="right-side">
-          <div class="brand">
-            <div>Douglas Santos</div>
-          </div>
+          <div class="brand">Douglas Santos</div>
           <div class="customers">Customers</div>
         </div>
       </div>
