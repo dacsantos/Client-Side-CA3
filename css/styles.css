@@ -1,10 +1,16 @@
 body {
   margin: 2px;
+  color:white;
+  background-size:cover;
+  font-family: 'Roboto', sans-serif;
+  
+
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
+  
 }
 
 /* Nav Styles */
@@ -31,20 +37,23 @@ body {
 }
 
 .nav-link a {
-  color: teal;
+  color: lightgray;
   text-decoration: none;
   transition: color 0.5s;
 }
 
 .nav-link:hover {
-  border-bottom: 1px solid darkolivegreen;
+  border-bottom: 1px solid white;
 }
 
 .nav-link a:hover {
-  color: darkolivegreen;
+  color: white ;
 }
 
 /* Center body styles */
+/* .center-page{
+  justify-items: center;
+} */
 
 .page-options {
   display: grid;
@@ -53,15 +62,11 @@ body {
 
 .page-option {
   position: relative;
-}
-
-.restaurant-name {
-  font-size: 50px;
-  font-weight: 500;
-  color: teal;
   align-items: center;
   text-align: center;
 }
+
+
 
 .option-title {
   font-weight: 600;
@@ -76,28 +81,173 @@ body {
   padding-right: 100px;
 }
 
-table,
-th,
-td {
+table, th, td {
   border: 1px solid black;
 }
 
-th,
-td {
+th, td {
   padding: 5px;
 }
 
 table {
   font-size: 15px;
-  width: 700px;
+  width: 100%;
 }
 
-table th {
+table th{
   background-color: cadetblue;
 }
 td.total {
-  background-color: lightgrey;
+  background-color: cadetblue;
 }
 .right {
   text-align: right;
 }
+
+/* Password Validator */
+input {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  font-weight: bold;
+}
+
+/* Style the container for inputs */
+.passContainer {
+  padding: 20px;
+  
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background-color: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+#restaurant{
+  font-family: 'Dancing Script', cursive;
+	font-size: 70px;
+  color: teal;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+	height: 30px;
+	padding: 50px;
+	text-shadow: 2px 2px 2px black;
+  width: 100%;
+	height: 30px;
+	padding: 50px;
+	text-shadow: 2px 2px 2px rgba(139, 161, 10, 0.753);
+
+  text-align: left;
+	border-radius: 0 0 85% 85% / 30%;  
+}
+
+.restaurant-name {
+  font-family: 'Dancing Script', cursive;
+	font-size: 70px;
+  color: teal;
+  align-items: center;
+  text-align: center;
+}
+
+.restaurant-name {
+	width: 100%;
+	height: 30px;
+	padding: 50px;
+	text-shadow: 2px 2px 2px black;
+
+  text-align: left;
+	border-radius: 0 0 85% 85% / 30%;  
+	
+}
+/* Menu Items and Ingredients */
+
+
+.page-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page-option {
+  position: relative;
+}
+
+.menu-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.img-text-wrapper:hover .subtitle {
+  color: lightseagreen;
+  font-weight: 600;
+}
+

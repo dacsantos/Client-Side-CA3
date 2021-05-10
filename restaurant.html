@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <script src="js/script.js" defer></script>
+  </head>
+  <body background="img/bg2.jpeg">
+
+    
+    <div class="container" >
+
+      
+   
+      <div class="nav-wrapper">
+        
+        <div class="left-side">
+          <div class="nav-link">
+            <a href="restaurant.html"> Home </a>
+          </div>
+          <div class="nav-link">
+            <a href="ingredients.html"> Kitchen </a>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="nav-link">
+            <a href="index.html"> Login </a>
+          </div>
+          <div class="customers">Customers</div>
+        </div>
+      </div>
+      
+        <div class="center-page">
+          <div id="restaurant">Restaurant Brazil</div><br><br>
+          <br><br>
+          <div class="page-options">
+            <br><br>
+            <div class="page-option">
+              <div class="option-title">Order Menu - Choose below</div>
+              <br>
+              <table>
+                <tr class="starters">
+                    <th>Starters</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>(V) Pão de Queijo (Cheese Bread)</td>
+                    <td><input type="number" id="qtt1" name="qtt" value="0" min="0" max="99" size="2" data-price="4.50"></td>
+                    <td>€4.50</td>
+                </tr>
+                <tr>
+                    <td>Coxinha (Chiken Croquettes)</td>
+                    <td><input type="number" id="qtt2" name="qtt" value="0"min="0" max="99"size="2" data-price="5"></td>
+                    <td>€5.00</td>
+                </tr>
+                <tr>
+                    <td>Loaded Chips (w/ Bacon & Cheddar)</td>
+                    <td><input type="number" id="qtt3" name="qtt" value="0"min="0" max="99"size="2" data-price="6.50"></td>
+                    <td>€6.50</td>
+                </tr>
+                <tr class="main">
+                  <th>Main Course</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+              </tr>
+              <tr>
+                <td>(V) Vegetarian Strogonoff</td>
+                <td><input type="number" id="qtt4" name="qtt" value="0" min="0" max="99" size="2" data-price="9"></td>
+                <td>€9.00</td>
+            </tr>
+            <tr>
+                <td>Chicken Strogonoff</td>
+                <td><input type="number" id="qtt5" name="qtt" value="0"min="0" max="99"size="2" data-price="11"></td>
+                <td>€11.00</td>
+            </tr>
+            <tr>
+                <td>Feijoada (Black beans and pork stew)</td>
+                <td><input type="number" id="qtt6" name="qtt" value="0"min="0" max="99"size="2" data-price="12"></td>
+                <td>€12.00</td>
+            </tr>
+                <tr>
+                    <td>Picanha (Rump Steak)</td>
+                    <td><input type="number" id="qtt7" name="qtt" value="0"min="0" max="99"size="2" data-price="15"></td>
+                    <td>€15.00</td>
+                </tr>
+
+                <tr class="desserts">
+                  <th>Desserts</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+              </tr>
+              <tr>
+                  <td>Pudim</td>
+                  <td><input type="number" id="qtt8" name="qtt" value="0" min="0" max="99" size="2" data-price="4.50"></td>
+                  <td>€4.50</td>
+              </tr>
+              <tr>
+                  <td>Carrot Cake</td>
+                  <td><input type="number" id="qtt9" name="qtt" value="0"min="0" max="99"size="2" data-price="5"></td>
+                  <td>€5.00</td>
+              </tr>
+              <tr>
+                  <td>Pave</td>
+                  <td><input type="number" id="qtt10" name="qtt" value="0"min="0" max="99"size="2" data-price="6.50"></td>
+                  <td>€6.50</td>
+              </tr>
+              <tr class="drinks">
+                <th>Drinks</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Coke</td>
+                <td><input type="number" id="qtt11" name="qtt" value="0" min="0" max="99" size="2" data-price="4.50"></td>
+                <td>€4.50</td>
+            </tr>
+            <tr>
+                <td>Guarana</td>
+                <td><input type="number" id="qtt12" name="qtt" value="0"min="0" max="99"size="2" data-price="5"></td>
+                <td>€5.00</td>
+            </tr>
+            <tr>
+                <td>Orange Juice</td>
+                <td><input type="number" id="qtt13" name="qtt" value="0"min="0" max="99"size="2" data-price="6.50"></td>
+                <td>€6.50</td>
+            </tr> 
+                <tr>
+                    <td class="total">&nbsp;</td>
+                        <td class="total right"><strong>Total:</strong></td>
+                        <td class="total"><strong>
+                                <div id="Total">€0.00</div>
+                </tr>
+            </table>
+            </div>
+              <br><br>
+            <div class="page-option">
+              <div class="option-title">Order Breakdown</div>
+              <table>
+                <tr >
+                    <td></td>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Item A</td>
+                    <td><input type="number" id="qtt1" name="qtt" value="0" min="0" max="99" size="1" data-price="100"></td>
+                    <td>€100</td>
+                </tr>
+                <tr>
+                    <td>Item B</td>
+                    <td><input type="number" id="qtt2" name="qtt" value="0"min="0" max="99"size="2" data-price="50"></td>
+                    <td>€50</td>
+                </tr>
+                <tr>
+                    <td>Item C</td>
+                    <td><input type="number" id="qtt3" name="qtt" value="0"min="0" max="99"size="2" data-price="30"></td>
+                    <td>€30</td>
+                </tr>
+                <tr>
+                    <td>Item D</td>
+                    <td><input type="number" id="qtt4" name="qtt" value="0"min="0" max="99"size="2" data-price="24"></td>
+                    <td>€24</td>
+                </tr>
+                <tr>
+                    <td class="total">&nbsp;</td>
+                        <td class="total right"><strong>Total:</strong></td>
+                        <td class="total"><strong>
+                                <div id="Total">€0</div>
+                </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+
+        
+    </div>
+
+    <script></script>
+    
+  </body>
+</html>

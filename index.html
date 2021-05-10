@@ -6,80 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+    
     <script src="js/script.js" defer></script>
   </head>
-  <body>
+
+
+  <body background="img/bg3.jpeg">
     <div class="container">
       <div class="nav-wrapper">
         <div class="left-side">
           <div class="nav-link">
-            <a href="index.html"> Home </a>
+            <a href="restaurant.html"> Home </a>
           </div>
           <div class="nav-link">
-            <a href="page2.html"> Kitchen </a>
+            <a href="ingredients.html"> Kitchen </a>
           </div>
         </div>
+        <div class="right-side">
+          <div class="nav-link">
+            <a href="index.html"> Login </a>
+      </div>
 
         <div class="center-page">
-          <div class="restaurant-name">Restaurant Brazil</div>
+          <div class="restaurant-name">Restaurant Brazil</div><br><br>
           <div class="page-options">
-            <div class="page-option">
-              <div class="option-title">Validate staff password</div>
-              <form>
-                <label for="credit">Password</label>
-                <input type="text" id="credit" name="credit" pattern="[0-9]{8}" title="Must contain 8 digits" required>
-                <input type="submit" value="Submit">
+          <div class="page-option">
+            <div class="option-title">Validate staff password</div><br>
+            <div class="passContainer">
+              <form action="restaurant.html">
+                <label for="usrname">Staff Name</label><br>
+                <input type="text" id="usrname" name="usrname" required />
+                <br>
+                <label for="psw">Password</label><br>
+                <input
+                  type="password"
+                  id="psw"
+                  name="psw"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  required
+                />
+
+                <input type="submit" value="Submit" />
               </form>
             </div>
 
-            <div class="page-option">
-              <div class="option-title">Order Menu</div>
-              <table>
-                <tr style="background-color: rgb(209, 229, 255);">
-                    <td></td>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                </tr>
-                <tr>
-                    <td>Item A</td>
-                    <td><input type="number" id="qtt1" name="qtt" value="0" min="0" max="99" size="1" data-price="100"></td>
-                    <td>€100</td>
-                </tr>
-                <tr>
-                    <td>Item B</td>
-                    <td><input type="number" id="qtt2" name="qtt" value="0"min="0" max="99"size="2" data-price="50"></td>
-                    <td>€50</td>
-                </tr>
-                <tr>
-                    <td>Item C</td>
-                    <td><input type="number" id="qtt3" name="qtt" value="0"min="0" max="99"size="2" data-price="30"></td>
-                    <td>€30</td>
-                </tr>
-                <tr>
-                    <td>Item D</td>
-                    <td><input type="number" id="qtt4" name="qtt" value="0"min="0" max="99"size="2" data-price="24"></td>
-                    <td>€24</td>
-                </tr>
-                <tr style="background-color: rgb(209, 229, 255);">
-                    <td class="total">&nbsp;</td>
-                        <td class="total right"><strong>Total:</strong></td>
-                        <td class="total"><strong>
-                                <div id="Total">€0</div>
-                </tr>
-            </table>
-            </div>
-
-            <div class="page-option">
-              <div class="option-title">Order Breakdown</div>
+            <div id="message">
+              <h4>Password must contain the following:</h4>
+              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+              <p id="capital" class="invalid">
+                A <b>capital (uppercase)</b> letter
+              </p>
+              <p id="number" class="invalid">A <b>number</b></p>
+              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
             </div>
           </div>
+            </div>
         </div>
-
-        <div class="right-side">
-          <div class="brand">Douglas Santos</div>
-          <div class="customers">Customers</div>
-        </div>
-      </div>
+        
     </div>
 
     <script></script>
