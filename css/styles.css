@@ -1,43 +1,110 @@
+/* Default styles */
 body {
-  margin: 2px;
-  color:white;
-  background-size:cover;
-  font-family: 'Roboto', sans-serif;
-  
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
 }
 
-.container {
+/* Middle of the page */
+/* Restaurant Name */
+.restaurant-name, .restaurant-menu {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  color: teal;
+  align-items: center;
+  text-align: center;
+}
+
+.restaurant-name {
+  height: 60px;
+  padding: 60px 10px 30px 10px;
+  text-shadow: 2px 2px 2px black;
+  margin: 0;
+}
+
+.restaurant-menu{
+    text-shadow: 1px 1px 1px lightskyblue;
+}
+.center-page {
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+  text-align: center;
+}
+.page-options {
   display: grid;
   grid-template-columns: 1fr;
-  
+}
+.menu-page {
+  display: flex;
 }
 
-/* Nav Styles */
+
+.page-option {
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.option-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 0 0 85% 85% / 30%;
+  text-transform: uppercase;
+  color: teal;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px 20px 10px 20px;
 }
 
+/* left and right side links */
 .left-side {
   display: flex;
 }
-
-.nav-wrapper > .left-side > div {
-  margin-right: 10px;
-  font-size: 0.9em;
+.right-side {
+  margin-left: auto;
   text-transform: uppercase;
 }
-
+.nav-wrapper > .right-side > div {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+.nav-wrapper > .left-side > div {
+  margin-right: 10px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
 .nav-link {
   height: 20px;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.5s;
 }
 
+.active-nav-link {
+  border-bottom: 1px solid white !important;
+}
+
+.active-nav-link a {
+  color: white !important;
+}
 .nav-link a {
-  color: lightgray;
+  color: gray;
   text-decoration: none;
   transition: color 0.5s;
 }
@@ -47,207 +114,106 @@ body {
 }
 
 .nav-link a:hover {
-  color: white ;
-}
-
-/* Center body styles */
-/* .center-page{
-  justify-items: center;
-} */
-
-.page-options {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.page-option {
-  position: relative;
-  align-items: center;
-  text-align: center;
-}
-
-
-
-.option-title {
-  font-weight: 600;
-  color: teal;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-table, th, td {
-  border: 1px solid black;
-}
-
-th, td {
-  padding: 5px;
-}
-
-table {
-  font-size: 15px;
-  width: 100%;
-}
-
-table th{
-  background-color: cadetblue;
-}
-td.total {
-  background-color: cadetblue;
-}
-.right {
-  text-align: right;
+  color: white;
+  font-style: bold;
+  font-weight: 500;
 }
 
 /* Password Validator */
-input {
-  width: 70%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  
+/* Style the container for inputs */
+.passContainer {
+  padding: 10px 10px 10px 10px;
+  color: teal;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
-/* Style the submit button */
-input[type=submit] {
-  background-color: #04AA6D;
+input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+/* Enter button */
+input[type="submit"] {
+  background-color: teal;
   color: white;
   font-weight: bold;
 }
 
-/* Style the container for inputs */
-.passContainer {
-  padding: 20px;
-  
-}
-
 /* The message box is shown when the user clicks on the password field */
 #message {
-  display:none;
-  background-color: #f1f1f1;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.534);
   color: #000;
   position: relative;
-  padding: 20px;
-  margin-top: 10px;
+  padding: 10px;
+  margin: auto;
+  width:45%;
 }
+
 
 #message p {
-  padding: 10px 35px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
-/* Add a green text color and a checkmark when the requirements are right */
+/* Add a green checkmark when the requirements are right */
 .valid {
-  color: green;
+  color: #04aa6d;
 }
 
 .valid:before {
   position: relative;
-  left: -35px;
+  left: -15px;
   content: "✔";
 }
 
-/* Add a red text color and an "x" when the requirements are wrong */
+/* Add a red "x" when the requirements are wrong */
 .invalid {
-  color: red;
+  color: rgb(184, 10, 10);
 }
 
 .invalid:before {
   position: relative;
-  left: -35px;
+  left: -15px;
   content: "✖";
 }
 
-#restaurant{
-  font-family: 'Dancing Script', cursive;
-	font-size: 70px;
-  color: teal;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-	height: 30px;
-	padding: 50px;
-	text-shadow: 2px 2px 2px black;
-  width: 100%;
-	height: 30px;
-	padding: 50px;
-	text-shadow: 2px 2px 2px rgba(139, 161, 10, 0.753);
+/* Menu Page */
+/* Table Menu */
+table, th, td{
+    border: 1px solid gray;
+    color: rgb(255, 255, 255);
+    
+  }
+  
+  
+  th, td {
+    padding: 5px;
+    text-transform: capitalize;
+  }
+  
+  table {
+    font-size: 15px;
+    width: 100%;
+    background: rgba(4, 255, 234, 0.171);
+    margin-top: 20px;
+    
+  }
+  
+  table th{
+    background-color: teal;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  td.total {
+    background-color: teal;
+  }
 
-  text-align: left;
-	border-radius: 0 0 85% 85% / 30%;  
-}
-
-.restaurant-name {
-  font-family: 'Dancing Script', cursive;
-	font-size: 70px;
-  color: teal;
-  align-items: center;
-  text-align: center;
-}
-
-.restaurant-name {
-	width: 100%;
-	height: 30px;
-	padding: 50px;
-	text-shadow: 2px 2px 2px black;
-
-  text-align: left;
-	border-radius: 0 0 85% 85% / 30%;  
-	
-}
-/* Menu Items and Ingredients */
-
-
-.page-options {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.page-option {
-  position: relative;
-}
-
-.menu-img-background {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 350px;
-  width: 100%;
-}
-
-.img-text-wrapper {
-  position: absolute;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.img-text-wrapper .subtitle {
-  transition: 1s;
-  color: transparent;
-}
-
-.image-blur {
-  transition: 1s;
-  filter: brightness(10%);
-}
-
-.img-text-wrapper:hover .subtitle {
-  color: lightseagreen;
-  font-weight: 600;
-}
-
+  .customers{
+    
+  }

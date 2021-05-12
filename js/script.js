@@ -3,16 +3,8 @@ var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
 var length = document.getElementById("length");
+var char = document.getElementById("char");
 
-// When the user clicks on the password field, show the message box
-myInput.onfocus = function() {
-  document.getElementById("message").style.display = "block";
-}
-
-// When the user clicks outside of the password field, hide the message box
-myInput.onblur = function() {
-  document.getElementById("message").style.display = "none";
-}
 
 // When the user starts to type something inside the password field
 myInput.onkeyup = function() {
@@ -35,6 +27,17 @@ myInput.onkeyup = function() {
     capital.classList.remove("valid");
     capital.classList.add("invalid");
   }
+  // validate special char
+var specialChar = /[!@#$%^&*]/g;
+// [!@#$%^&*]
+// [!@#$%^&*]
+  if(myInput.value.match(specialChar)) {  
+    char.classList.remove("invalid");
+    char.classList.add("valid");
+  } else {
+    char.classList.remove("valid");
+    char.classList.add("invalid");
+  }
 
   // Validate numbers
   var numbers = /[0-9]/g;
@@ -55,6 +58,16 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
+// Message password requirement
+$(document).ready(function(){
+
+  $('#psw').click(function(){
+  $('#message').slideToggle('slow');
+
+  
+  });
+  
+  });
 
 var total_items = 13;
 
@@ -72,3 +85,5 @@ function CalculateItemsValue(){
 document.querySelectorAll('[id^="qtt"]').forEach(item => {
     item.addEventListener('change', CalculateItemsValue);
 });
+
+// Customers
