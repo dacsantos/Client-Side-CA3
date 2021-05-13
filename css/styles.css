@@ -28,7 +28,7 @@ body {
 .restaurant-menu{
     text-shadow: 1px 1px 1px lightskyblue;
 }
-.center-page {
+.center-page-login {
   margin: auto;
   width: 50%;
   padding: 0px;
@@ -40,8 +40,12 @@ body {
 }
 .menu-page {
   display: flex;
-}
+  width: 97%;
+  justify-content:space-around;
+  align-items: flex-start;
 
+
+}
 
 .page-option {
   position: relative;
@@ -77,11 +81,11 @@ body {
   display: flex;
 }
 .right-side {
-  margin-left: auto;
   text-transform: uppercase;
 }
 .nav-wrapper > .right-side > div {
     margin-left: 10px;
+    margin-right: 25px;
     font-size: 0.9rem;
     text-transform: uppercase;
   }
@@ -103,17 +107,17 @@ body {
 .active-nav-link a {
   color: white !important;
 }
-.nav-link a {
+.nav-link a, #customers {
   color: gray;
   text-decoration: none;
   transition: color 0.5s;
 }
 
-.nav-link:hover {
+.nav-link:hover{
   border-bottom: 1px solid white;
 }
 
-.nav-link a:hover {
+.nav-link a, #customers:hover {
   color: white;
   font-style: bold;
   font-weight: 500;
@@ -148,7 +152,7 @@ input[type="submit"] {
 /* The message box is shown when the user clicks on the password field */
 #message {
   display: none;
-  background-color: rgba(255, 255, 255, 0.534);
+  background-color: rgba(255, 255, 255, 0.637);
   color: #000;
   position: relative;
   padding: 10px;
@@ -163,7 +167,7 @@ input[type="submit"] {
 
 /* Add a green checkmark when the requirements are right */
 .valid {
-  color: #04aa6d;
+  color: teal;
 }
 
 .valid:before {
@@ -192,15 +196,19 @@ table, th, td{
   }
   
   
-  th, td {
-    padding: 5px;
+   td {
+    padding: 5px 20px;
     text-transform: capitalize;
+    text-align: center;
+  }
+  input[type="number"]{
+    box-sizing: unset;
   }
   
   table {
     font-size: 15px;
     width: 100%;
-    background: rgba(4, 255, 234, 0.171);
+    background: rgba(70, 73, 73, 0.692);
     margin-top: 20px;
     
   }
@@ -214,6 +222,69 @@ table, th, td{
     background-color: teal;
   }
 
-  .customers{
-    
-  }
+.list-customers, h2{
+  color: white;
+  list-style-type: none;
+  
+}
+
+.img-customer{
+  border-radius: 50%;
+  float: left;
+  margin: 0;
+  padding: 5px;
+}
+
+ul{
+  padding-left: 10px;
+}
+
+/* Kitchen styles */
+
+.dishes-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.dish-wrapper{
+  position: relative;
+}
+
+.dish-img{
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text{
+position: absolute;
+top: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+text-align: center;
+padding-left: 100px;
+padding-right: 100px;
+}
+
+
+.img-text .subtitle{
+  font-weight: 600;
+  transition: 1s;
+  color: transparent;
+
+} 
+.img-text:hover .subtitle{
+  font-weight: 600;
+  color: teal;
+}
+
+.img-darken{
+  transition: 1s;
+  filter: brightness(30%);
+}
+
