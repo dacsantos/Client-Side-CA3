@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Default styles */
 body {
   background-size: cover;
@@ -380,3 +381,375 @@ h2 {
   filter: brightness(30%);
 }
 /* ----------------------------------- */
+=======
+/* Default styles */
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
+/* Middle of the page */
+/* Restaurant Name */
+.restaurant-name,
+.restaurant-menu,
+.restaurant-kitchen {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  color: teal;
+  align-items: center;
+  text-align: center;
+}
+
+.restaurant-name {
+  height: 60px;
+  padding: 60px 10px 30px 10px;
+  text-shadow: 2px 2px 2px black;
+  margin: 0;
+}
+
+.restaurant-kitchen{
+  text-shadow: 3px 3px 3px black;
+  margin: 0;
+
+}
+
+.restaurant-menu {
+  text-shadow: 1px 1px 1px lightskyblue;
+}
+.center-page-login {
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+  text-align: center;
+}
+.page-options {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.menu-page {
+  display: flex;
+  width: 97%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.center-page{
+  margin: 10px;
+}
+.page-option {
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.option-title {
+  font-size: 22px;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 0 0 85% 85% / 30%;
+  text-transform: uppercase;
+  color: teal;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.menu-page, .order-breakdown{
+  background-color: rgba(0, 0, 0, 0.295);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+}
+
+/* left and right side links */
+.left-side {
+  display: flex;
+}
+.right-side {
+  text-transform: uppercase;
+}
+.nav-wrapper > .right-side > div {
+  margin-left: 10px;
+  margin-right: 25px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.nav-wrapper > .left-side > div {
+  margin-right: 10px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.nav-link {
+  height: 20px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid white !important;
+}
+
+.active-nav-link a {
+  color: white !important;
+}
+.nav-link a,
+#customers {
+  color: gray;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav-link a,
+#customers:hover {
+  color: white;
+  font-style: bold;
+  font-weight: 500;
+}
+
+/* Password Validator */
+/* Style the container for inputs */
+.passContainer {
+  padding: 10px 10px 10px 10px;
+  color: teal;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+label{
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+/* Enter button */
+input[type="submit"] {
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px black;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.637);
+  color: #000;
+  position: relative;
+  padding: 10px;
+  margin: auto;
+  width: 45%;
+}
+
+#message p {
+  font-size: 15px;
+}
+
+/* Add a green checkmark when the requirements are right */
+.valid {
+  color: teal;
+}
+
+.valid:before {
+  position: relative;
+  left: -15px;
+  content: "✔";
+}
+
+/* Add a red "x" when the requirements are wrong */
+.invalid {
+  color: rgb(184, 10, 10);
+}
+
+.invalid:before {
+  position: relative;
+  left: -15px;
+  content: "✖";
+}
+
+/* Menu Page */
+/* Table Menu */
+.table-menu, .table-bill
+th,
+td {
+  border: 1px solid gray;
+  color: rgb(255, 255, 255);
+  
+}
+
+.bill-col {
+  width: 100px;
+}
+
+td {
+  padding: 5px 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+input[type="number"] {
+  box-sizing: unset;
+}
+
+.table-menu, .table-bill {
+  font-size: 15px;
+  width: 100%;
+  background: rgba(70, 73, 73, 0.692);
+  margin-top: 20px;
+
+}
+
+ th {
+  background-color: teal;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+td.total, td.total.right {
+  background-color: teal;
+  font-weight: 400;
+}
+
+ul {
+  padding-left: 10px;
+}
+
+/* Kitchen styles */
+
+.dishes-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.dish-wrapper {
+  position: relative;
+}
+
+.dish-img {
+  height: 350px;
+  width: 100%;
+  border-radius: 1%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.233) inset;
+
+}
+
+.img-text {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.img-text .subtitle {
+  font-weight: 600;
+  transition: 0.5s;
+  color: transparent;
+}
+.img-text:hover .subtitle {
+  font-weight: 600;
+  color: teal;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(30%);
+}
+
+/* Customers Styles */
+
+.menu-customer {
+width: 400px;
+background-color: rgba(0, 0, 0, 0.295);
+
+}
+.menu-customer h2{
+  text-align: center;
+}
+#myBtn{
+  margin-left: 30%;
+  color: white;
+  font-weight: 650;
+  background-color: teal;
+  font-size: medium;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.list-customers,
+h2 {
+  color: white;
+  list-style-type: none;
+  text-shadow: 2px 2px 2px black;
+ 
+  
+}
+
+.list-customers{
+  margin: 20px;
+  padding: 10px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  text-indent: 5%;
+  text-overflow: ellipsis;
+  background-color: rgba(0, 128, 128, 0.514);
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 20%;
+   
+
+}
+
+.img-customer {
+  border-radius: 50%;
+  float: left;
+  margin: 0;
+  padding: 5px;
+}
+
+#output{
+  margin-left: 10%;
+}
+
+.list-customer-email{
+  display: inline-flex;
+}
+>>>>>>> a5c20b3ae83dde4ab607af625f452fcafe712288

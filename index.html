@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -58,3 +59,65 @@
         </div>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Brazil</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/login.js" defer></script>
+  </head>
+
+<!-- This is the login page, the first to show, and requires a Staff name and password to get into the menu -->
+<!-- I decided to do this to add a feeling of limited access - It can be implemented in the future -->
+
+  <body background="img/bg3.jpeg">
+    <div class="container">
+        <div class="center-page-login">
+          <div class="restaurant-name">Restaurant Brazil</div><br><br>
+          <div class="page-options">
+          <div class="page-option">
+            <div class="option-title">Validate staff password</div><br>
+            <div class="passContainer">
+              <!-- The form that asks for name and password, both are required - I got the idea from W3Schools -->
+              <!-- After fulfilled, it takes the user to the Menu Page -->
+              <form action="menu.html">
+                <label for="usrname">Name</label><br>
+                <input type="text" id="usrname" name="usrname" title="Your staff name, please" required />
+                <br>
+                <label for="psw">Password</label><br>
+                <input
+                  type="password"
+                  id="psw"
+                  name="psw"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}"
+                  title="Must contain at least 8 characters: one number, one uppercase and lowercase letter, and a special character"
+                  required
+                />
+                <br>
+                <input type="submit" value="Enter" />
+              </form>
+                </div>
+                <!-- This is the message that appears when the user clicks on the password field - Also an idea from W3Schools-->
+                <!-- A reminder of what it's needed for a password to be accepted -->
+             <div id="message" >
+              <h4>Password must contain the following:</h4>
+              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+              <p id="char" class="invalid">At least <b>1 special character</b></p>
+              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+              <p id="capital" class="invalid">
+                A <b>capital </b> letter
+              </p>
+              <p id="number" class="invalid">A <b>number</b></p>
+            </div>
+          </div>
+            </div>
+        </div>
+  </body>
+</html>
+>>>>>>> a5c20b3ae83dde4ab607af625f452fcafe712288
