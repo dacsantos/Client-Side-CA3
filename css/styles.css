@@ -295,7 +295,7 @@ ul {
 
 .list-customers,
 h2 {
-  color: white;
+  color: rgba(255, 255, 255, 0.822);
   list-style-type: none;
   text-shadow: 2px 2px 2px black;
 }
