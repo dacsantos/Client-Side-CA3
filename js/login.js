@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Password Validator
 
 var myInput = document.getElementById("psw");
@@ -66,7 +65,6 @@ $(document).ready(function () {
     $("#message").slideToggle("slow");
   });
 });
-=======
 // Password Validator
 
 var myInput = document.getElementById("psw");
@@ -132,4 +130,4 @@ $(document).ready(function () {
     $("#message").slideToggle("slow");
   });
 });
->>>>>>> a5c20b3ae83dde4ab607af625f452fcafe712288
+
