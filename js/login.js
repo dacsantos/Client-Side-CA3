@@ -7,8 +7,10 @@ var number = document.getElementById("number");
 var length = document.getElementById("length");
 var char = document.getElementById("char");
 
-// When the user starts to type something inside the password field
+// When the user starts typing something in the password field
+
 myInput.onkeyup = function () {
+
   // Validate lowercase letters
   var lowerCaseLetters = /[a-z]/g;
   if (myInput.value.match(lowerCaseLetters)) {
@@ -57,7 +59,7 @@ myInput.onkeyup = function () {
     length.classList.add("invalid");
   }
 };
-// Message password requirement
+// Message password requirements
 $(document).ready(function () {
   $("#psw").click(function () {
     $("#message").slideToggle("slow");
